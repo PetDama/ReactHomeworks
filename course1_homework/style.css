@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.watch {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.hand, .hour-mark {
+    position: absolute;
+}
+
+.hour-mark {
+    font-size: larger;
+}
+
+#hour-12 { top: 5%; left: 44%; }
+#hour-3 { top: 44%; left: 88%; }
+#hour-6 { bottom: 5%; left: 44%; }
+#hour-9 { top: 44%; left: 5%; }
+
+.hand {
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.hour {
+    width: 3%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+
+.minute {
+    width: 1.6%;
+    height: 15%;
+    top: 35%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+
+.second {
+    width: 0.7%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
